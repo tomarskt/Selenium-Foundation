@@ -251,6 +251,7 @@ public class PageComponent extends ComponentContainer implements WrapsElement {
      * {@inheritDoc}
      */
     @Override
+    @SuppressWarnings("common-java:DuplicatedBlocks")
     public int hashCode() {
         final int prime = 31;
         int result = super.hashCode();
@@ -263,7 +264,7 @@ public class PageComponent extends ComponentContainer implements WrapsElement {
      * {@inheritDoc}
      */
     @Override
-    @SuppressWarnings({"squid:S1142", "squid:S1126"})
+    @SuppressWarnings({"squid:S1142", "squid:S1126", "common-java:DuplicatedBlocks"})
     public boolean equals(final Object obj) {
         if (this == obj)
             return true;

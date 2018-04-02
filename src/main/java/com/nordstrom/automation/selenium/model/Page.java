@@ -22,6 +22,7 @@ import com.nordstrom.automation.selenium.exceptions.InitialPageNotSpecifiedExcep
  * Your page class must implement #1, which is the sole public constructor. The second constructor is package-private,
  * used by the {@link Frame} class to perform superclass initialization.
  */
+@SuppressWarnings("common-java:DuplicatedBlocks")
 public class Page extends ComponentContainer {
 
     private String windowHandle;
@@ -274,7 +275,7 @@ public class Page extends ComponentContainer {
      * {@inheritDoc}
      */
     @Override
-    @SuppressWarnings({"squid:S1774", "common-java:DuplicatedBlocks"})
+    @SuppressWarnings("squid:S1774")
     public int hashCode() {
         final int prime = 31;
         int result = super.hashCode();
@@ -290,7 +291,7 @@ public class Page extends ComponentContainer {
      * {@inheritDoc}
      */
     @Override
-    @SuppressWarnings({"squid:S1142", "common-java:DuplicatedBlocks"})
+    @SuppressWarnings("squid:S1142")
     public boolean equals(final Object obj) {
         if (this == obj)
             return true;

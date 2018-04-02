@@ -22,6 +22,7 @@ import com.google.common.base.Throwables;
  * you wish to collect multiple instances in a {@link FrameList} or {@link FrameMap}. Also note that you must override
  * {@link #hashCode()} and {@link #equals(Object)} if you add significant fields.
  */
+@SuppressWarnings("common-java:DuplicatedBlocks")
 public class Frame extends Page {
 
     private FrameSelect frameSelect;
@@ -206,7 +207,7 @@ public class Frame extends Page {
      * {@inheritDoc}
      */
     @Override
-    @SuppressWarnings({"squid:S1774", "common-java:DuplicatedBlocks"})
+    @SuppressWarnings("squid:S1774")
     public int hashCode() {
         final int prime = 31;
         int result = super.hashCode();
@@ -221,7 +222,7 @@ public class Frame extends Page {
      * {@inheritDoc}
      */
     @Override
-    @SuppressWarnings({"squid:S1142", "common-java:DuplicatedBlocks"})
+    @SuppressWarnings("squid:S1142")
     public boolean equals(final Object obj) {
         if (this == obj)
             return true;
